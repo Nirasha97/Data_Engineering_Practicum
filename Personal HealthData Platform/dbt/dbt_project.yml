@@ -1,0 +1,17 @@
+
+name: health_platform
+version: '1.0.0'
+config-version: 2
+profile: health_platform
+model-paths: ["models"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  health_platform:
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: view
+    mart:
+      +materialized: table

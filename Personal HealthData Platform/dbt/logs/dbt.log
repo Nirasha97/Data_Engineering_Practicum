@@ -1,0 +1,124 @@
+[0m08:28:49.591832 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002585E7E61B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002585B9694F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002585DDCC080>]}
+
+
+============================== 08:28:49.608556 | 7a9043fc-8ba2-4bee-a922-dfb5581453a2 ==============================
+[0m08:28:49.608556 [info ] [MainThread]: Running with dbt=1.12.0-b1
+[0m08:28:49.608556 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'c:\\Users\\Nirasha J\\Personal HealthData Platform\\dbt', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'c:\\Users\\Nirasha J\\Personal HealthData Platform\\dbt\\logs'}
+[0m08:28:49.841948 [info ] [MainThread]: dbt version: 1.12.0-b1
+[0m08:28:49.841948 [info ] [MainThread]: python version: 3.12.0
+[0m08:28:49.841948 [info ] [MainThread]: python path: C:\Users\Nirasha J\Personal HealthData Platform\.venv\Scripts\python.exe
+[0m08:28:49.841948 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m08:28:50.025035 [info ] [MainThread]: Using profiles dir at c:\Users\Nirasha J\Personal HealthData Platform\dbt
+[0m08:28:50.025035 [info ] [MainThread]: Using profiles.yml file at c:\Users\Nirasha J\Personal HealthData Platform\dbt\profiles.yml
+[0m08:28:50.025035 [info ] [MainThread]: Using dbt_project.yml file at c:\Users\Nirasha J\Personal HealthData Platform\dbt\dbt_project.yml
+[0m08:28:50.041585 [info ] [MainThread]: adapter type: postgres
+[0m08:28:50.041585 [info ] [MainThread]: adapter version: 1.10.0
+[0m08:28:50.208387 [info ] [MainThread]: Configuration:
+[0m08:28:50.208387 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m08:28:50.217520 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m08:28:50.217520 [info ] [MainThread]: Required dependencies:
+[0m08:28:50.219535 [debug] [MainThread]: Executing "git --help"
+[0m08:28:50.302340 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m08:28:50.303089 [debug] [MainThread]: STDERR: "b''"
+[0m08:28:50.303089 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m08:28:50.303089 [info ] [MainThread]: Connection:
+[0m08:28:50.305527 [info ] [MainThread]:   host: localhost
+[0m08:28:50.305527 [info ] [MainThread]:   port: 5432
+[0m08:28:50.305527 [info ] [MainThread]:   user: admin
+[0m08:28:50.305527 [info ] [MainThread]:   database: healthcare
+[0m08:28:50.307649 [info ] [MainThread]:   schema: analytics
+[0m08:28:50.308521 [info ] [MainThread]:   connect_timeout: 10
+[0m08:28:50.308521 [info ] [MainThread]:   role: None
+[0m08:28:50.308521 [info ] [MainThread]:   search_path: None
+[0m08:28:50.310919 [info ] [MainThread]:   keepalives_idle: 0
+[0m08:28:50.310919 [info ] [MainThread]:   sslmode: None
+[0m08:28:50.310919 [info ] [MainThread]:   sslcert: None
+[0m08:28:50.312793 [info ] [MainThread]:   sslkey: None
+[0m08:28:50.312793 [info ] [MainThread]:   sslrootcert: None
+[0m08:28:50.312793 [info ] [MainThread]:   application_name: dbt
+[0m08:28:50.314807 [info ] [MainThread]:   retries: 1
+[0m08:28:50.314807 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m08:28:50.608392 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m08:28:56.686047 [debug] [MainThread]: Using postgres connection "debug"
+[0m08:28:56.686047 [debug] [MainThread]: On debug: select 1 as id
+[0m08:28:56.686047 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m08:28:56.721975 [debug] [MainThread]: SQL status: SELECT 1 in 0.035 seconds
+[0m08:28:56.721975 [debug] [MainThread]: On debug: Close
+[0m08:28:56.721975 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m08:28:56.721975 [info ] [MainThread]: [32mAll checks passed![0m
+[0m08:28:56.721975 [debug] [MainThread]: Command `dbt debug` succeeded at 08:28:56.721975 after 7.30 seconds
+[0m08:28:56.721975 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m08:28:56.721975 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002585E8B4AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002585F995550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002585E19FA40>]}
+[0m08:28:56.721975 [debug] [MainThread]: Flushing usage events
+[0m08:28:58.285113 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:43:33.629651 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F35C69B770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F35BC96120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F35BC96240>]}
+
+
+============================== 08:43:33.645034 | 101ce1c0-ccf6-4824-97d6-e02ac66207c0 ==============================
+[0m08:43:33.645034 [info ] [MainThread]: Running with dbt=1.12.0-b1
+[0m08:43:33.646530 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'c:\\Users\\Nirasha J\\Personal HealthData Platform\\dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'c:\\Users\\Nirasha J\\Personal HealthData Platform\\dbt\\logs'}
+[0m08:43:33.995999 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '101ce1c0-ccf6-4824-97d6-e02ac66207c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F35E59FCB0>]}
+[0m08:43:34.046002 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '101ce1c0-ccf6-4824-97d6-e02ac66207c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F35CCE6360>]}
+[0m08:43:34.046002 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m08:43:34.345713 [debug] [MainThread]: checksum: bb4f3af6101f4fac8936827dd5b9384eb0ce78de303b33aaed98bdc57ab9f18d, vars: {}, profile: health_platform, target: dev, version: 1.12.0b1
+[0m08:43:34.346140 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m08:43:34.347318 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '101ce1c0-ccf6-4824-97d6-e02ac66207c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F35E4554F0>]}
+[0m08:43:34.364626 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+'utf-8' codec can't decode byte 0x97 in position 34: invalid start byte
+[0m08:43:34.403345 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\Nirasha J\Personal HealthData Platform\.venv\Lib\site-packages\dbt\cli\requires.py", line 184, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nirasha J\Personal HealthData Platform\.venv\Lib\site-packages\dbt\cli\requires.py", line 130, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nirasha J\Personal HealthData Platform\.venv\Lib\site-packages\dbt\cli\requires.py", line 281, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nirasha J\Personal HealthData Platform\.venv\Lib\site-packages\dbt\cli\requires.py", line 326, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nirasha J\Personal HealthData Platform\.venv\Lib\site-packages\dbt\cli\requires.py", line 373, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nirasha J\Personal HealthData Platform\.venv\Lib\site-packages\dbt\cli\requires.py", line 389, in wrapper
+    setup_manifest(ctx, write=write, write_perf_info=write_perf_info)
+  File "C:\Users\Nirasha J\Personal HealthData Platform\.venv\Lib\site-packages\dbt\cli\requires.py", line 419, in setup_manifest
+    ctx.obj["manifest"] = parse_manifest(
+                          ^^^^^^^^^^^^^^^
+  File "C:\Users\Nirasha J\Personal HealthData Platform\.venv\Lib\site-packages\dbt\parser\manifest.py", line 2519, in parse_manifest
+    manifest = ManifestLoader.get_full_manifest(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nirasha J\Personal HealthData Platform\.venv\Lib\site-packages\dbt\parser\manifest.py", line 333, in get_full_manifest
+    manifest = loader.load()
+               ^^^^^^^^^^^^^
+  File "C:\Users\Nirasha J\Personal HealthData Platform\.venv\Lib\site-packages\dbt\parser\manifest.py", line 380, in load
+    file_reader.read_files()
+  File "C:\Users\Nirasha J\Personal HealthData Platform\.venv\Lib\site-packages\dbt\parser\read_files.py", line 221, in read_files
+    self.read_files_for_project(project, file_types)
+  File "C:\Users\Nirasha J\Personal HealthData Platform\.venv\Lib\site-packages\dbt\parser\read_files.py", line 228, in read_files_for_project
+    project_files[file_type_info["parser"]] = read_files_for_parser(
+                                              ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nirasha J\Personal HealthData Platform\.venv\Lib\site-packages\dbt\parser\read_files.py", line 176, in read_files_for_parser
+    source_files = get_source_files(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nirasha J\Personal HealthData Platform\.venv\Lib\site-packages\dbt\parser\read_files.py", line 165, in get_source_files
+    file = load_source_file(fp, parse_file_type, project.project_name, saved_files)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nirasha J\Personal HealthData Platform\.venv\Lib\site-packages\dbt\parser\read_files.py", line 92, in load_source_file
+    file_contents = load_file_contents(path.absolute_path, strip=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nirasha J\Personal HealthData Platform\.venv\Lib\site-packages\dbt_common\record.py", line 538, in record_replay_wrapper
+    return func_to_record(*call_args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Nirasha J\Personal HealthData Platform\.venv\Lib\site-packages\dbt_common\clients\system.py", line 183, in load_file_contents
+    to_return = handle.read().decode("utf-8")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x97 in position 34: invalid start byte
+
+[0m08:43:34.403345 [debug] [MainThread]: Command `dbt run` failed at 08:43:34.403345 after 1.00 seconds
+[0m08:43:34.403345 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F35CE45460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F35D31FEF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F35E4554F0>]}
+[0m08:43:34.403345 [debug] [MainThread]: Flushing usage events
+[0m08:43:35.907963 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -1,0 +1,13 @@
+
+health_platform:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      port: 5432
+      dbname: healthcare
+      user: admin
+      password: admin123
+      schema: analytics
+      threads: 4

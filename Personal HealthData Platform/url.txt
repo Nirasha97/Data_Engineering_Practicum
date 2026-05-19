@@ -1,0 +1,15 @@
+MinIO Console http://localhost:9001  MINIO_ROOT_USER / MINIO_ROOT_PASSWORD
+
+MinIO API (code) http://localhost:9000
+
+pgAdmin  http://localhost:5050  PGADMIN_EMAIL / PGADMIN_PASSWORD
+
+Grafana  http://localhost:3000  GRAFANA_USER /GRAFANA_PASSWORD
+
+InfluxDB  http://localhost:8086  INFLUXDB_USERNAME / INFLUXDB_PASSWORD
+
+PostgreSQL (code)localhost:5432 POSTGRES_USER / POSTGRES_PASSWORD
+
+TimescaleDB (code)localhost:5433  TIMESCALE_USER / TIMESCALE_PASSWORD
+
+Redis (code)localhost:6379 no password
